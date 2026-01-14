@@ -107,4 +107,28 @@
 // console.log(totalPrice(products2));
 // console.log(totalPrice(products3));
 
+// let number=''
+// let fact=number+1
+// for(let i=1; i<number; i++){
+//     fact=fact*1
+// }
+// console.log(fact);
+const readline=require('readline');
+const rl=readline.createInterface({
+    input:process.stdin,
+    output:process.stdout
+});
+rl.question("enter first number:",(input)=>{
+    let number=Number(input);
+    if(number<0){
+        console.log("negative number ka factorial nhi hota");
+    }else{
+        let fact=1;
+        for(let i=1; i<=number; i++){
+            fact*=i;
+        }
+       console.log(`factorial of ${number} is: ${fact}`);
 
+    }
+    rl.close();
+});
