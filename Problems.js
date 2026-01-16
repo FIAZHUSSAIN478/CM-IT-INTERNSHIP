@@ -1,3 +1,9 @@
+
+/// i worked on multiple problems in this file during the week that's why everything is commented and not properly decleared.All other files are fine.
+//Ging farword i will write clean, well structured code with proper declaration and clear comments in every new file.
+
+
+
 // let a=10;
 // let b=20;
 // sum=a+b
