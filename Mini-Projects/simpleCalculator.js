@@ -1,3 +1,8 @@
+
+// make a simple calculator which can operate operations (+,-,*,/)
+// by using cli 
+
+
 const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
@@ -6,23 +11,23 @@ const rl = readline.createInterface({
 
 rl.question("Enter first number: ", (num1) => {
   rl.question("Enter second number: ", (num2) => {
-    rl.question("Choose operation (+, -, *, /): ", (op) => {
+    rl.question("Choose operation (+, -, *, /): ", (operation) => {
       
       num1 = Number(num1);
       num2 = Number(num2);
       let result;
 
-      switch (op) {
+      switch (operation) {
         case "+":
-          result = num1 + num2;
+          result = num1 + num2;  // in this case add two number which user enter 
           break;
         case "-":
-          result = num1 - num2;
+          result = num1 - num2;  // in this case minus num2 in num1 which user eter 
           break;
         case "*":
-          result = num1 * num2;
+          result = num1 * num2;  // multiplication of two numbers
           break;
-        case "/":
+        case "/":   // it divide numbers but not divide any number by 0
           if (num2 === 0) {
             console.log(" Division by zero not allowed");
             rl.close();
