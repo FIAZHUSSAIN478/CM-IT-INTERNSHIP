@@ -8,7 +8,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-let todos = [];  // declear an empty array to store the task that we add in todo app
+let todos = [];  // declare an empty array to store the task that we add in todo app
 
 function showMenu() {  // here make a function that show menu todo app and handle user options
      
