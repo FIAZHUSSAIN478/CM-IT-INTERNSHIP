@@ -1,4 +1,7 @@
 // task manager
+//Add,	delete	and	complete	tasks
+//Filter tasks	(pending/completed)
+
 
 
 const readline = require("readline");
@@ -6,8 +9,7 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-let tasks = [];
-// let completedTasks = [];
+let tasks = [];   /// make an array that use to store data
 function taskManager() {
     console.log("\n--- Welcome To Task Manager ---\n")
     showMenu();
@@ -47,7 +49,7 @@ function showMenu() {
 
     });
 
-    function add() {
+    function add() {   // add task function 
         rl.question("enter task which you want to add :", function (taskName) {
             let object = {
                 id: Date.now(),
@@ -58,7 +60,7 @@ function showMenu() {
             showMenu();
         })
     }
-    function viewTask() {
+    function viewTask() {     // task detail view funtion
         if (tasks.length == 0) {
             console.log("no task yet")
         }
@@ -70,7 +72,7 @@ function showMenu() {
 
         }
     }
-    function deleteTask() {
+    function deleteTask() {   // delete function
         if (tasks.length == 0) {
             console.log("no task is deleted");
             showMenu();
@@ -84,7 +86,7 @@ function showMenu() {
         }
     }
 
-    function completeTask() {
+    function completeTask() {   // complete to a task mark as completed by default are task pending
         if (tasks.length == 0) {
             console.log("np task is to be completed");
             showMenu();
@@ -99,9 +101,6 @@ function showMenu() {
             i = parseInt(i) - 1;
             if (tasks[i] && !tasks[i].completed) {
                 tasks[i].completed = true;
-                // if (!completedTasks.includes(tasks[i])) {
-                //     completedTasks.push(tasks[i]);
-                // }
                 console.log("\n Completed: " + tasks[i].name);
             }
             else {
@@ -112,7 +111,7 @@ function showMenu() {
 
     }
 
-    function ViewCompleted() {
+    function ViewCompleted() {   /// view function of completed task
         let completed = tasks.filter(task => task.completed)
         if (completed.length == 0) {
             console.log("no task is completed")
@@ -127,7 +126,7 @@ function showMenu() {
         showMenu();
     }
 
-    function ViewPending() {
+    function ViewPending() {   // show pending task in array
         let pending = tasks.filter(tasks => !tasks.completed)
         if (pending.length == 0) {
             console.log("no pending task");
@@ -145,4 +144,4 @@ function showMenu() {
 
 }
 
-taskManager();
+taskManager(); 
