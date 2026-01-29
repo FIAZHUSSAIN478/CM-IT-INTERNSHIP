@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Form</title>
+</head>
+
+<body>
+
+
+
+    <form class="SignUpForm">
+        <div class="container">
+            <h1>SignUpForm</h1>
+
+            <div class="NameField">
+                <label for="name"> Name </label> <br>
+                <input type=" text" name="name" id="name" class="name" />
+                <p class="error"></p>
+            </div>
+
+            <div class="EmailField">
+                <label for="email"> Email </label> <br>
+                <input type=" text" name="email" id="email" class="email" />
+                <p class="error"></p>
+            </div>
+
+            <div class="PasswordField">
+                <label for="password"> Password</label> <br>
+                <input type=" password" name="password" id="password" class="password" />
+                <p class="error"></p>
+            </div>
+
+            <div class="btns">
+                <button type="submit" class="submit">Submit</button>
+                <button type="reset" class="reset">Reset</button>
+
+            </div>
+
+
+            <div id="saveData" class="saveData"></div>
+        </div>
+    </form>
+
+
+
+    <script src="form.js"></script>
+
+
+</body>
+
+</html>

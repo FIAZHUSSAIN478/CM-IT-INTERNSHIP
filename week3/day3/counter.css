@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.Title{
+    color: rgb(39, 30, 65);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:70px;
+}
+.Counter{
+ font-size: 30px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: 800; 
+}
+.container{
+    height: 400px;
+    width:400px;
+    margin-top: 80px;
+    background-color: rgb(185, 220, 227);
+    box-shadow: rgb(60, 55, 55);
+    border-radius: 10px;
+    
+ 
+}
+.container {
+    transition: transform 2s ease-out, box-shadow 2s ease-out;
+}
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 40px rgba(64, 58, 58, 0.2);
+}
+
+.add{
+    height: 40px;
+    width: 100px;
+    border-radius:50px;
+    background-color: green;
+    color: white;
+}
+.minus{
+    height: 40px;
+    width: 100px;
+    border-radius:50px;
+    background-color: blue;
+    color: white;
+}
+.reset button{
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    border-radius:50px;
+    background-color:red;
+    color: white;
+}
+.add:hover{
+    background-color: white;
+    color: black;
+}
+.minus:hover{
+    background-color: white;
+    color: black
+}
+.reset button:hover{
+    background-color: white;
+    color: black
+}
