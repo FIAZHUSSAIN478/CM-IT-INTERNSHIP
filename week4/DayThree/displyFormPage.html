@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="displyForm.css">
+    <title>Display User Data</title>
+</head>
+
+<body>
+    <main class="mainHead">
+
+        <section class="mainCard">
+
+            <div class="card">
+                <h3>Name:</h3>
+                <p class="nameField"></p>
+            </div>
+
+            <div class="card">
+                <h3>Age:</h3>
+                <p class="ageField"></p>
+            </div>
+
+            <div class="card">
+                <h3>Email:</h3>
+                <p class="emailField"></p>
+            </div>
+
+            <div class="card">
+                <h3>Contact Number:</h3>
+                <p class="phoneField"></p>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        let data = JSON.parse(localStorage.getItem("userData"));
+        if (!data) {
+
+            document.body.innerHTML = "<p>no data</p>";
+        } else {
+
+            document.querySelector(".nameField").innerText = data.name;
+            document.querySelector(".ageField").innerText = data.age;
+            document.querySelector(".emailField").innerText = data.email;
+            document.querySelector(".phoneField").innerText = data.phone;
+        }
+    </script>
+</body>
+
+</html>

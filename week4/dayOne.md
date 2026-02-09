@@ -1,0 +1,1 @@
+EOD: Week 4 Day 1 (2nd Feb 2026) Tasks Completed: Only Basics: Started Microsoft Azure Fundamentals course Completed Module  (Cloud Concepts & Azure Basics) Learned about IaaS, PaaS, SaaS and core Azure services Understood cloud benefits: scalability, reliability, and cost efficiency Attempted Azure practice exercise. Revised all concepts from the past three weeks.
